@@ -15,17 +15,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="keyword" content="Ryuko Network Center, ryuko network center,Games,Tutorial,Product,RPG,FPS,MOBA">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ryuko Network Center</title>
-	<!-- CSS bootstrap and custom -->
+	<!-- CSS custom -->
 	<link rel="stylesheet" type="text/css" href="custom/custom.css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<!-- icon -->
 	<link rel="icon" href="foto/icon.png">
 	<!-- link fontawsome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- CDN AOS SOURCES LINK -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<!-- Javascript -->
-	<script src="bootstrap/js/bootstrap.js"></script>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<!-- JS CDN LINK -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- jquery link -->
@@ -37,9 +38,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->	
 	<!-- header area -->
-	<div class="header">
-		<!-- navbar menu link -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	<!-- navbar menu link -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-lg-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#" title="brand">
 					<img src="foto/icon.png" class="navbar-icon" alt="ryuko-brand"><span class="custom-text-brand">Ryuko Network Center</span>
@@ -79,6 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</nav>
+	<div class="header">
 		<!-- slider -->
 		<div id="carouselExampleControls" class="carousel slide bg-light custom-slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
@@ -116,11 +117,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div class="content">
 		<div class="container container-yt">
 			<div class="box-yt-games" data-aos="fade-up" id="Games">
-				<a href="https://ryukonetworkcenter.my.id" target="_blank">
+				<a href="https://games.ryukonetworkcenter.my.id" target="_blank">
 					<img src="foto/Games.png" class="img-banner-games" alt="Games" title="Games">
-					<div class="box-link-games">
-						<span class="btn-custom btn-custom-1">Learn More</span>
-					</div>	
 				</a>	
 			</div>
 			<div class="box-yt-tutor bg-light" id="Tutor">
@@ -149,7 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<h1 class="fw-bold text-center mb-5 font-monospace" data-aos="fade-down">PRODUCT KAMI YANG TERSEDIA</h1>
 			<div class="row row-cols-1 row-cols-md-3 g-4">
 				<div class="col">
-					<div class="card card-product">
+					<div class="card card-product" data-aos="fade-up">
 						<img src="foto/GPC.jpg" class="card-img-top" alt="GooglePlayCard" title="GooglePlayCard">
 						<div class="card-body">
 							<h2 class="card-title">Google Play Card</h2>
@@ -158,7 +156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card card-product">
+					<div class="card card-product" data-aos="fade-down">
 						<img src="foto/STEAM.jpg" class="card-img-top" alt="STEAM Wallet" title="STEAM Wallet">
 						<div class="card-body">
 							<h2 class="card-title">Steam Wallet Voucher</h2>
@@ -167,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card card-product">
+					<div class="card card-product" data-aos="fade-up">
 						<img src="foto/GI.jpg" class="card-img-top" alt="Genshin Impact" title="Genshin Impact">
 						<div class="card-body">
 							<h2 class="card-title">Genshin Impact Product</h2>
@@ -176,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 				<div class="col">
-					<div class="card card-product">
+					<div class="card card-product" data-aos="fade-down">
 						<img src="foto/SW.jpg" class="card-img-top" alt="Summoners War" title="Summoners War">
 						<div class="card-body">
 							<h2 class="card-title">Summoners War</h2>
@@ -256,52 +254,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- button animation up -->
 <button id="myBtn" onclick="topFunction()" title="Kembali Ke Atas"><i class="fa fa-angle-up"></i></button>
-
-<!-- JS Script -->
-<script>
-// dark mode toggle
-function myFunction(){
-	var element = document.body;
-	element.classList.toggle("color-mode");
-}
-
-// Get Button
-var mybutton = document.getElementById("myBtn");
-
-// When User Scroll down from top of document, show Button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
-	} else {
-		mybutton.style.display = "none";
-	}
-}
-
-// When user clicks on Button, scroll to the top of document
-function topFunction() {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome ,IE
-}
-
-// loader animation page
-// set delay loader 1s
-var delay = 1000;
-
-function loader(){
-	setTimeout(function(){
-		$("#loading").hide();
-		$(".loading").hide();
-	},delay);
-};
-
-// Script For AOS animation	
-  AOS.init();
-
-// version website
-var versionWebsite = "V.2.5";
-console.log("Web Version " + versionWebsite);
-</script>	
+<!-- script js custom -->
+<script src="custom/customjs.js"></script>
 </body>
 </html>

@@ -15,17 +15,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta name="keyword" content="Ryuko Network Center, ryuko network center,Games,Tutorial,Product,RPG,FPS,MOBA">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Ryuko Network Center - About</title>
-	<!-- CSS bootstrap and custom -->
+	<<!-- CSS custom -->
 	<link rel="stylesheet" type="text/css" href="../custom/custom.css">
-	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<!-- icon -->
 	<link rel="icon" href="../foto/icon.png">
 	<!-- link fontawsome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- CDN AOS SOURCES LINK -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<!-- Javascript -->
-	<script src="../bootstrap/js/bootstrap.js"></script>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<!-- JS CDN LINK -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- jquery link -->
@@ -37,9 +38,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->		
 	<!-- header area -->
-	<div class="header">
-		<!-- navbar menu link -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	<!-- navbar menu link -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-lg-top">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#" title="brand">
 					<img src="../foto/icon.png" class="navbar-icon" alt="ryuko-brand"><span class="custom-text-brand">Ryuko Network Center</span>
@@ -53,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<a class="nav-link fs-5 fw-bold" href="https://ryukonetworkcenter.my.id">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fs-5 fw-bold text-decoration-line-through" href="#https://games.ryukonetworkcenter.my.id">Games</a>
+							<a class="nav-link fs-5 fw-bold" href="https://games.ryukonetworkcenter.my.id">Games</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link fs-5 fw-bold" href="https://tutorial.ryukonetworkcenter.my.id">Tutorial</a>
@@ -62,7 +62,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<a class="nav-link fs-5 fw-bold" href="https://product.ryukonetworkcenter.my.id">Product</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fs-5 fw-bold text-decoration-line-through" href="https://news.ryukonetworkcenter.my.id">News</a>
+							<a class="nav-link fs-5 fw-bold" href="https://news.ryukonetworkcenter.my.id">News</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link active fs-5 fw-bold" aria-current="page" href="https://about.ryukonetworkcenter.my.id">About</a>
@@ -79,6 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</nav>
+	<div class="header">
 		<!-- slider -->
 		<div id="carouselExampleControls" class="carousel slide bg-light custom-slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
@@ -164,81 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- button animation up -->
 <button id="myBtn" onclick="topFunction()" title="Kembali Ke Atas"><i class="fa fa-angle-up"></i></button>
-
-<!-- JS Script -->
-<script>
-// dark mode toggle
-function myFunction(){
-	var element = document.body;
-	element.classList.toggle("color-mode");
-}
-
-// Get Button
-var mybutton = document.getElementById("myBtn");
-
-// When User Scroll down from top of document, show Button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		mybutton.style.display = "block";
-	} else {
-		mybutton.style.display = "none";
-	}
-}
-
-// When user clicks on Button, scroll to the top of document
-function topFunction() {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome ,IE
-}
-
-// loader animation page
-// set delay loader 1s
-var delay = 1000;
-
-function loader(){
-	setTimeout(function(){
-		$("#loading").hide();
-		$(".loading").hide();
-	},delay);
-};
-
-//count down timer 
-//timer count down 
-var countDownDate = new Date ("May 11, 2022 00:00:00").getTime();
-
-//update the every 1 second
-var countDownFunction = setInterval(function(){
-
-  //Get todays date and time
-  var now = new Date().getTime();
-
-  //find the distance new count down and down date
-  var distance = countDownDate - now;
-
-  //time calculations for days now
-  var days = Math.floor(distance / (1000 *  60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60 )) / 1000);
-
-  //output count with demo
-  document.getElementById("demo").innerHTML = hours + "Jam " + minutes + "menit " + seconds + "detik";
-
-  //if count down is over, write text 
-  if(distance < 0){
-    clearInterval(countDownFunction);
-    document.getElementById("demo").innerHTML = "DISKON TELAH BERAKHIR TUNGGU DISKON SELANJUTNYA";
-  }
-}, 1000);
-
-// Script For AOS animation	
-  AOS.init();
-
-// version website
-var versionWebsite = "V.2.5";
-console.log("Web Version " + versionWebsite);
-</script>	
+<!-- script custom js -->
+<script src="../custom/customjs.js"></script>
 </body>
 </html>
