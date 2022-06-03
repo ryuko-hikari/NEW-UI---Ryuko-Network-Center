@@ -39,5 +39,5 @@ function loader(){
   AOS.init();
 
 // version website
-var versionWebsite = "V.2.8";
+var versionWebsite = "V.2.9";
 console.log("Web Version " + versionWebsite);
